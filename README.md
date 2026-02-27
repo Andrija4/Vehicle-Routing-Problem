@@ -6,14 +6,9 @@ This repository contains a project for solving the **Vehicle Routing Problem (VR
 
 ## Project Description
 
-The Vehicle Routing Problem (VRP) focuses on finding the most efficient routes for one or more vehicles to deliver goods or services to multiple customers.
+The Vehicle Routing Problem (VRP) focuses on finding the most efficient routes 3 vehicles to deliver goods or services to multiple customers.
 
-The objective is to minimize total operational costs (such as distance, time, or fuel consumption) while satisfying constraints like:
-
-- Vehicle capacity
-- Number of vehicles
-- Delivery requirements
-- (Optional) Time windows
+The objective is to minimize total operational costs.
 
 ---
 
@@ -60,7 +55,7 @@ python algoritam01_greedyAdd.py
 Vehicle-Routing-Problem-Project/
 │
 ├── algoritam01_shortesRoute.py   # Shortest Route heuristic
-├── algoritam01_greedyAdd.py      # Greedy Add heuristic
+├── algoritam02_greedyAdd.py      # Greedy Add heuristic
 └── README.md
 ```
 
@@ -70,7 +65,6 @@ Vehicle-Routing-Problem-Project/
 
 ```
 5   # Number of customers
-3   # Number of vehicles
 ```
 
 ---
