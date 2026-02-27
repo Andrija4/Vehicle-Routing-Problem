@@ -1,40 +1,101 @@
 # Vehicle Routing Problem Project
 
-Ovaj repozitorijum sadrži projekat za rešavanje problema rutiranja vozila (*Vehicle Routing Problem - VRP*), optimizacionog problema koji se koristi za planiranje optimalnih ruta vozila u logistici i transportu.
+This repository contains a project for solving the **Vehicle Routing Problem (VRP)**, an optimization problem used for planning optimal vehicle routes in logistics and transportation.
 
-## Opis projekta
+---
 
-Problem rutiranja vozila uključuje pronalaženje najefikasnijih ruta za jedno ili više vozila kako bi se dostavile robe ili usluge različitim klijentima, uz minimizaciju troškova kao što su vreme, udaljenost ili gorivo, i poštovanje ograničenja kao što su kapacitet vozila ili vremenski prozori.
+## Project Description
 
-## Kako koristiti
+The Vehicle Routing Problem (VRP) focuses on finding the most efficient routes for one or more vehicles to deliver goods or services to multiple customers.
 
-1. Klonirajte repozitorijum: git clone https://github.com/Andrija4/Vehicle-Routing-Problem-Project.git cd Vehicle-Routing-Problem-Project
+The objective is to minimize total operational costs (such as distance, time, or fuel consumption) while satisfying constraints like:
 
-2. Proverite da li imate instaliran Python i potrebne biblioteke. Ukoliko je potreban dodatni softver, instalirajte ga pomoću: pip install -r requirements.txt
-(Ako fajl `requirements.txt` ne postoji, pogledajte zavisnosti u kodu i ručno instalirajte potrebne biblioteke.)
+- Vehicle capacity
+- Number of vehicles
+- Delivery requirements
+- (Optional) Time windows
 
-3. Pokrenite program
+---
 
-## Organizacija fajlova
+## How to Use
 
-- `algoritam01_shortesRoute.py`  
-Pokretanje programa sa alogirtmom "Shortest Route"
-- `algoritam01_greedyAdd.py`
-Pokretanje programa sa algoritmom "Greedy Add"
+### Clone the repository
 
-## Primer ulaznih podataka
+```bash
+git clone https://github.com/Andrija4/Vehicle-Routing-Problem-Project.git
+cd Vehicle-Routing-Problem-Project
+```
 
-5 # Broj klijenata 3 # Broj vozila 
+### Install dependencies
 
-## Plan unapređenja
+Make sure you have **Python 3.x** installed.
 
-- [ ] Dodavanje podrške za različite heuristike i optimizacione algoritme
-- [ ] Detaljna dokumentacija i korisnički interfejs
+If a `requirements.txt` file exists:
 
-## Autor
+```bash
+pip install -r requirements.txt
+```
 
-Projekat je razvijen od strane [Andrija4](https://github.com/Andrija4). Slobodno otvorite *issue* ili pošaljite *pull request* ako želite da doprinesete.
+If not, check the imported libraries in the source code and install them manually.
 
-## Licence
+### Run the program
 
-Ovaj projekat nema specifičnu licencu, pa se koristi **"as-is"**. Ukoliko imate pitanja ili predloge, slobodno ih podelite putem sekcije *issues*.
+Run one of the available algorithms:
+
+```bash
+python algoritam01_shortesRoute.py
+```
+
+or
+
+```bash
+python algoritam01_greedyAdd.py
+```
+
+---
+
+## Project Structure
+
+```
+Vehicle-Routing-Problem-Project/
+│
+├── algoritam01_shortesRoute.py   # Shortest Route heuristic
+├── algoritam01_greedyAdd.py      # Greedy Add heuristic
+└── README.md
+```
+
+---
+
+## Example Input
+
+```
+5   # Number of customers
+3   # Number of vehicles
+```
+
+---
+
+## Future Improvements
+
+- [ ] Add support for additional heuristics
+- [ ] Implement advanced optimization algorithms (e.g., Genetic Algorithm, Simulated Annealing)
+- [ ] Add visualization of routes
+- [ ] Create a graphical user interface (GUI)
+- [ ] Improve documentation
+
+---
+
+## Author
+
+Developed by **Andrija4**  
+GitHub: https://github.com/Andrija4
+
+Feel free to open an issue or submit a pull request if you'd like to contribute.
+
+---
+
+## License
+
+This project currently does not have a specific license and is provided **"as-is"**.
+
+If you plan to use or modify this project publicly, consider adding a license (e.g., MIT License).
